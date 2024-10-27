@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishant Deshmukh's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#journey">My Journey</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nishant Deshmukh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#journey" onclick="toggleMenu()">My Journey</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Nishant Deshmukh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nishant Deshmukh</h1>
+        <p class="section__text__p2">Computer Science and Engineering Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nishant-deshmukh-1385842ab/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nishantdeshmukh7'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>Committee Member at AARUUSH | Co-Founder of CODENEX CLUB</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Tech in CSE (Cyber Security) | SRM Institute of Science and Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I am pursuing a B.Tech in Computer Science and Engineering, specializing in Cyber Security. I have a passion for technology and a strong interest in software development, problem-solving, and innovative solutions. My goal is to leverage my skills to contribute positively to the tech industry and tackle real-world challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML & CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>NumPy & Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Report Building</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>People Management</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Task Prioritization</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="EcoBill" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">EcoBill</h2>
+            <p>Smart Electricity Calculator & Advisor</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="WeatherWise Pro" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">WeatherWise Pro</h2>
+            <p>Weather Forecasting App using Swift UI</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+<section id="journey">
+  <p class="section__text__p1">My Learning Journey</p>
+  <h1 class="title">Data Structures & Algorithms</h1>
+  
+  <div class="journey-box">
+    <h2>Introduction</h2>
+    <p>Welcome to my portfolio! This document showcases my understanding and practical applications of Data Structures and Algorithms (DSA), a fundamental aspect of computer science. Through this course, I have gained valuable insights into how data is organized, manipulated, and optimized for problem-solving. This portfolio reflects my learning journey, emphasizing the projects I've undertaken, my problem-solving approach, and the various topics covered throughout the course.</p>
+  </div>
+
+  <div class="journey-box">
+    <h2>Topics Covered</h2>
+    <ul>
+      <li><strong>Basic Data Structures:</strong>
+        <ul>
+          <li>Arrays</li>
+          <li>Linked Lists</li>
+          <li>Stacks</li>
+          <li>Queues</li>
+        </ul>
+      </li>
+      <li><strong>Advanced Data Structures:</strong>
+        <ul>
+          <li>Trees (Binary Trees, AVL Trees, B-Trees)</li>
+          <li>Graphs</li>
+          <li>Hash Tables</li>
+        </ul>
+      </li>
+      <li><strong>Algorithms:</strong>
+        <ul>
+          <li>Sorting Algorithms (Quick Sort, Merge Sort, Bubble Sort)</li>
+          <li>Searching Algorithms (Binary Search, Linear Search)</li>
+          <li>Dynamic Programming</li>
+          <li>Recursion and Backtracking</li>
+        </ul>
+      </li>
+      <li><strong>Complexity Analysis:</strong>
+        <ul>
+          <li>Big O Notation</li>
+          <li>Time and Space Complexity</li>
+        </ul>
+      </li>
+      <li><strong>Problem-Solving Techniques:</strong>
+        <ul>
+          <li>Greedy Algorithms</li>
+          <li>Divide and Conquer</li>
+          <li>Depth-First Search (DFS) and Breadth-First Search (BFS)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="journey-box">
+    <h2>Projects Related to DSA</h2>
+    <h3>Project 1: Data Structure Visualizer</h3>
+    <p><strong>Description:</strong> Developed a web-based tool that visualizes different data structures (e.g., trees, graphs) and their operations (insertion, deletion, traversal).</p>
+    <p><strong>Technologies Used:</strong> JavaScript, HTML, CSS, D3.js</p>
+    <p><strong>Outcome:</strong> Enhanced my understanding of how data structures operate under the hood and provided a useful educational tool for others.</p>
+
+    <h3>Project 2: Sorting Algorithm Simulator</h3>
+    <p><strong>Description:</strong> Created a simulator to demonstrate various sorting algorithms with visualizations of each step in the process.</p>
+    <p><strong>Technologies Used:</strong> Python, Tkinter</p>
+    <p><strong>Outcome:</strong> Gained a deeper insight into the efficiency of different sorting techniques and their applications.</p>
+
+    <h3>Project 3: Pathfinding Algorithm Implementation</h3>
+    <p><strong>Description:</strong> Implemented algorithms like A* and Dijkstra’s to find the shortest path in a grid.</p>
+    <p><strong>Technologies Used:</strong> Python, Pygame</p>
+    <p><strong>Outcome:</strong> Developed a better understanding of graph theory and practical applications of algorithms in real-world scenarios.</p>
+  </div>
+
+  <div class="journey-box">
+    <h2>Problem-Solving Approach</h2>
+    <p>Throughout my studies, I adopted a systematic problem-solving approach:</p>
+    <ul>
+      <li><strong>Understanding the Problem:</strong> Carefully analyze the problem statement to identify inputs, outputs, and constraints.</li>
+      <li><strong>Choosing the Right Data Structure:</strong> Determine which data structure best fits the requirements of the problem.</li>
+      <li><strong>Designing an Algorithm:</strong> Outline the steps of the algorithm, focusing on efficiency and clarity.</li>
+      <li><strong>Implementing the Solution:</strong> Write clean and organized code, ensuring to handle edge cases.</li>
+      <li><strong>Testing and Optimization:</strong> Test the solution against various test cases, optimizing for performance and readability.</li>
+    </ul>
+  </div>
+
+  <div class="journey-box">
+    <h2>Conclusion</h2>
+    <p>This portfolio is a testament to my journey in mastering Data Structures and Algorithms. The projects and skills I have developed will serve as a solid foundation as I continue my studies and pursue a career in computer science. I am excited to apply these concepts in real-world applications and further deepen my understanding of this crucial field.</p>
+  </div>
+
+  <div class="hacker-rank-link">
+    <img src="./assets/hackerrank-logo.png" alt="HackerRank Logo" />
+    <h2><a href="https://www.hackerrank.com/profile/nishantdeshmukh7">My HackerRank Profile</a></h2>
+  </div>
+</section>
+
+      
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:nishantdeshmukhofficial@gmail.com.com">nishantdeshmukhofficial@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/nishant-deshmukh-1385842ab/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#journey">My Journey</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nishant Deshmukh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
